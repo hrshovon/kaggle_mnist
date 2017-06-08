@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/shovon/python_stuffs/mnist_kaggle/mnist-0.001-6conv.model"
+all_model_checkpoint_paths: "/home/shovon/python_stuffs/mnist_kaggle/mnist-0.001-6conv.model"

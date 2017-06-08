@@ -1,0 +1,5 @@
+*.npy
+*.png
+*.csv
+log
+_pycache_
