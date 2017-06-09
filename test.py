@@ -4,7 +4,9 @@ import tflearn
 from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression
-from neuralnet_conv import cnn_model
+#from neuralnet_conv import cnn_model
+from neuralnet_conv2 import cnn_model
+
 from tqdm import tqdm
 import random
 IMG_SIZE=28
@@ -49,4 +51,5 @@ def test():
 			model_out=model.predict([data])[0]
 			f.write('{},{}\n'.format(num,np.argmax(model_out)))
 			num+=1
-show_some_pics()
+#show_some_pics()
+test()
