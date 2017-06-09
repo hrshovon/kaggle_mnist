@@ -7,7 +7,7 @@ import os
 import tensorflow as tf
 from neuralnet_conv import cnn_model
 IMGSIZE=28
-LR=1e-3
+LR=1e-4
 MODEL_NAME='mnist-{}-{}.model'.format(LR,'6conv')
 tf.reset_default_graph()
 
@@ -30,6 +30,6 @@ def train():
     test_x=np.array([i[0] for i in test]).reshape(-1,IMGSIZE,IMGSIZE,1)
     test_y=[i[1] for i in test]
 
-    model.fit({'input': X}, {'targets': Y}, n_epoch=100, validation_set=({'input': test_x}, {'targets': test_y}), snapshot_step=500, show_metric=True, run_id=MODEL_NAME)
+    model.fit({'input': X}, {'targets': Y}, n_epoch=300, validation_set=({'input': test_x}, {'targets': test_y}), snapshot_step=500, show_metric=True, run_id=MODEL_NAME)
     model.save(MODEL_NAME)
 train()

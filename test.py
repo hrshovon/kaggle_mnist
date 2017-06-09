@@ -8,7 +8,7 @@ from neuralnet_conv import cnn_model
 from tqdm import tqdm
 import random
 IMG_SIZE=28
-LR=1e-3
+LR=1e-4
 MODEL_NAME='mnist-{}-{}.model'.format(LR,'6conv')
 test_data=np.load("test.csv.npy")
 fig = plt.figure()
@@ -19,7 +19,7 @@ model.load(MODEL_NAME)
 #	return 
 def show_some_pics():
 	num=0
-	st_index=random.randint(0,27000)
+	st_index=random.randint(0,27500)
 	for item in test_data[st_index:st_index+12]:
 		img_data=item[0]
 		#print(img_data)
