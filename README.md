@@ -6,5 +6,4 @@ Thanks to opencv website and specially sentdex for his great tutorials on tflear
 
 Update
 
-Currently highest accuracy after deskew operation is 99.171%.Changed learning rate
-and number of epochs
+Currently highest accuracy after deskew operation is 99.314%.Added a new neural network model.
