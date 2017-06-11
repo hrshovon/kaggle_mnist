@@ -5,13 +5,13 @@ from tflearn.layers.conv import conv_2d, max_pool_2d
 from tflearn.layers.core import input_data, dropout, fully_connected
 from tflearn.layers.estimator import regression
 #from neuralnet_conv import cnn_model
-from neuralnet_conv2 import cnn_model
+from neuralnet_conv3 import cnn_model
 
 from tqdm import tqdm
 import random
 IMG_SIZE=28
 LR=1e-4
-MODEL_NAME='mnist-{}-{}.model'.format(LR,'6conv')
+MODEL_NAME='mnist-{}-{}.model'.format(LR,'8conv')
 test_data=np.load("test.csv.npy")
 fig = plt.figure()
 model=cnn_model(IMG_SIZE,LR)
